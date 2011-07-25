@@ -1,0 +1,7 @@
+/*
+ * Style de la page de la Fosse À Questions
+ */
+
+.faq_section	{ font-size:14px; color:#666666; border-bottom:1px dashed #63B906; 
+					padding-bottom:5px; font-weight:bold; }
+.q 				{ color:#61B906; }

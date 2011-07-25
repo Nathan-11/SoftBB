@@ -1,0 +1,29 @@
+
+/* Éléments de la partie supérieurs (boutons et arborescance) */
+.mptop_left				{ float:left; padding-right:10px; }
+.mptop_arbo				{ margin-top:5px; }
+	.mptop_titre		{ font-weight:bold; }
+
+/* Cellules individuelles du tableau */
+#mpr_mainbloc				{ background-color:#DDD9D8; padding:10px; margin-bottom:20px;
+								border-radius:8px; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius: 10px; }
+		.mpr_infomb			{ padding:10px; padding-top:0px; text-align:center; }
+			.mpr_avatarimg	{ width:80%; margin-top:7px; }
+		.mpr_infos			{ font-size:0.8em; }
+		.mpr_txt			{ 	background-color:#CCCBC9; padding:10px;
+								border-radius:8px; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius: 10px; }
+		.mpr_endbloc		{ clear:both; }
+		.mpr_entremsg		{ }	/* Bloc entre deux messages */
+
+		/* Spécificités _g = envoyeur, _d = destinataire d'après mp original en mode AJOUT (surdéfinition) */
+		#mpr_mainbloc_e		{ }
+		#mpr_mainbloc_r		{ }
+		.mpr_infomb_e		{ float:left; }
+		.mpr_infomb_r		{ float:right; }
+		.mpr_infos_e		{ text-align:right; margin-right:40px; }
+		.mpr_infos_r		{ margin-left:40px; }
+		.mpr_txt_e			{ margin-left:130px; }
+		.mpr_txt_r			{ margin-right:130px; text-align:right; }
+		
+/* Réponse rapide */
+.speedrep_textarea			{ width:98%; border:1px dashed #DDD9D8; height:100px; background-color:#DDD9D8; }

@@ -1,0 +1,61 @@
+
+RewriteEngine on
+
+############# PAGES DE GESTION
+# Statut (connexion/ inscription/ profil)
+RewriteRule ^connexion\.html$ index.php?page=connexion
+RewriteRule ^connexion-erreur\.html$ index.php?page=connexion&erreur=
+RewriteRule ^lgout\.html$ index.php?page=notifs&aff=lgout
+RewriteRule ^forgot\.html$ index.php?page=forgot
+RewriteRule ^reg\.html$ index.php?page=reg
+RewriteRule ^reg\.html$ index.php?page=reg
+RewriteRule ^profil\.html$ index.php?page=profil
+RewriteRule ^affprofil-([0-9]+)(?:-(.*))?\.html$  index.php?page=affprofil&id=$1 [L]
+RewriteRule ^affprofil.html$  index.php?page=affprofil [L]
+RewriteRule ^profil-([0-9]+)(?:-(.*))?.html$  index.php?page=profil&id=$1 [L]
+
+# Messagerie
+RewriteRule ^mp\.html$  index.php?page=mp [L]
+RewriteRule ^mp-send\.html$  index.php?page=mp&send [L]
+RewriteRule ^mpseek\.html$  index.php?page=mpseek [L]
+RewriteRule ^mpread-([0-9]+)(?:-(.*))?\.html$  index.php?page=mpread&idm=$1 [L]
+RewriteRule ^mpreadsend-([0-9]+)(?:-(.*))?\.html$  index.php?page=mpread&idm=$1&send= [L]
+RewriteRule ^mpseekbad-(.*)\.html$  index.php?page=mpseek&bad=&pseudo=$1 [L]
+RewriteRule ^mpsend-([0-9]+)(?:-(.*))?\.html$  index.php?page=mpsend&id=$1 [L]
+RewriteRule ^mprep-([0-9]+)-([0-9]+)(?:-(.*))?\.html$  index.php?page=mpsend&id=$1&rep=$2 [L]
+
+# Pages publics (membres, faq, groupes, recherches)
+RewriteRule ^membre\.html$  index.php?page=membre [L]
+RewriteRule ^membre\.html$  index.php?page=membre [L]
+RewriteRule ^affgroupe\.html$  index.php?page=affgroupe [L]
+RewriteRule ^groupe\.html$  index.php?page=groupe [L]
+RewriteRule ^affgroupe-([0-9]+)(?:-(.*))?\.html$  index.php?page=affgroupe&groupe=$1 [L]
+RewriteRule ^search\.html$  index.php?page=search [L]
+RewriteRule ^faq\.html$  index.php?page=faq [L]
+
+
+############# PAGES DU FORUM (forum|post|postadd)
+# Forums
+RewriteRule ^indexforum\.html$  index.php [L]
+RewriteRule ^index\.html$  index.php [L]
+RewriteRule ^erreur\.html$  index.php?page=notifs [L]
+RewriteRule ^forum-([0-9]+)-p([0-9]+)(?:-(.*))?\.html$  index.php?page=forum&idf=$1&pg=$2 [L]
+RewriteRule ^forum-([0-9]+)(?:-(.*))?\.html$  index.php?page=forum&idf=$1 [L]
+
+# Lecture d'un sujet
+RewriteRule ^post-([0-9]+)-p([0-9]+)(?:-(.*))?\.html$  index.php?page=post&ids=$1&pg=$2 [L]
+RewriteRule ^post-([0-9]+)(?:-(.*))?\.html$  index.php?page=post&ids=$1 [L]
+RewriteRule ^postsond-([0-9]+)-p([0-9]+)(?:-(.*))?\.html$  index.php?page=post&ids=$1&pg=$2&affsond= [L]
+RewriteRule ^postsond-([0-9]+)(?:-(.*))?\.html$  index.php?page=post&ids=$1&affsond= [L]
+
+# Ajout/ modification
+RewriteRule ^addtopic-([0-9]+)(?:-(.*))?.html$  index.php?page=postadd&idf=$1 [L]
+RewriteRule ^postadd-([0-9]+)(?:-(.*))?.html$  index.php?page=postadd&ids=$1 [L]
+RewriteRule ^postcit-([0-9]+)-([0-9]+)(?:-(.*))?.html$  index.php?page=postadd&ids=$1&cit=$2 [L]
+RewriteRule ^postedit-([0-9]+)-([0-9]+)(?:-(.*))?.html$  index.php?page=postadd&edit=$1&ids=$2&pg=0 [L]
+RewriteRule ^postedit-([0-9]+)-([0-9]+)-p([0-9]+)(?:-(.*))?.html$  index.php?page=postadd&edit=$1&ids=$2&pg=$3 [L]
+
+# Notifications
+RewriteRule ^notif-profsave.html$  index.php?page=notifs&aff=profsave [L]
+RewriteRule ^notif-delvalid-([0-9]+).html$  index.php?page=notifs&aff=delvalid&id2=$1 [L]
+RewriteRule ^notif-delvalid2-([0-9]+).html$  index.php?page=notifs&aff=delvalid2&id2=$1 [L]		

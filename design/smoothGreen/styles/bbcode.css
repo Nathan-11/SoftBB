@@ -1,0 +1,36 @@
+/**
+ * Feuille de style du bbcode affiché.
+ * Est normalement inclue dans la page index.php pour toutes les pages.
+ */
+
+.bbcode_img{
+	padding:4px; max-width:620px; }
+.bbcode_list{
+	margin-left:20px; border-left:2px solid green; padding-left:4px; }
+.bbcode_puce{
+	list-style-type:square; margin-left:15px; }
+	
+	/** CITATION **/
+.bbcode_quote_global{
+	margin-left:20px; }
+.bbcode_quote_titre{
+	font-size:0.8em; letter-spacing:2px; }
+.bbcode_quote{
+	background-color:#E8E8E8; padding:5px; border:1px solid #D6D6D6; }
+
+	/** SPOIL **/
+.bbcode_spoil{
+	width:90%; margin-left:20px; }
+.spoiler 					{ font-size:10px; padding:5px; border:1px solid #999999; width:75%; }
+.spoilertexte			 	{ font-weight:bold; font-size:10px; }
+
+	/** CODE/ SHELL **/
+.bbcode_code{	font-family:courrier, monospace; background-color:#C8E6CE; 
+	overflow:auto; max-height:500px; width:580px; padding:0px 14px 8px 4px; line-height:10px; color:#88282C;}
+.bbcode_code_titre{
+	font-family:courrier, monospace; color:#5A8963; letter-spacing:10px; text-transform:uppercase;  }
+.bbcode_shell_titre{
+	font-family:courrier, monospace; }
+.bbcode_shell{
+	font-family:courrier, monospace; background-color:black; padding:5px; color:white; line-height:10px; 
+	width:580px; overflow:auto; max-height:500px; }

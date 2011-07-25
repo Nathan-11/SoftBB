@@ -1,0 +1,50 @@
+<?php
+// Textes (d'origines) en FRANÇAIS : page includes/post.php
+// --> Par les développeurs de SoftBB
+
+$langue_post = array(
+	'post1' => 'Seuls les membres peuvent acceder &agrave; ce forum.',
+	'post2' => 'Vous n\'avez l\'autorisation de visioner ce forum',
+	'post3' => 'Ce forum est surverrouill&eacute;.',
+	'post4' => 'Ce sujet est surverrouill&eacute;.',
+	'post5' => 'Vous n\'avez pas l\'autorisation de visioner ce Sujet.',
+	'post6' => 'Nouveau Sujet',
+	'post7' => 'Vérouillé',
+	'post8' => 'Répondre',
+	'post9' => 'Pr&eacute;c.',
+	'post11' => ',Suiv.',
+	'post12' => 'Sondage',
+	'post13' => 'Envoyer',
+	'post14' => 'Afficher les votes',
+	'post15' => 'Nombre d\'option : ',
+	'post18' => 'image du rang',
+	'post19' => 'Messages: ',
+	'post20' => 'Voir le Profil',
+	'post21' => 'Envoyer un Message Privé',
+	'post22' => 'Voir le Site Web',
+	'post25' => 'Citer',
+	'post26' => 'Citer cet auteur lors du prochain message',
+	'post27' => 'Editer',
+	'post28' => 'Modifier ce message',
+	'post30' => 'Voulez-vous vraiment supprimer \ndefinitivement ce post ?',
+	'post31' => 'Post&eacute; le: ',
+	'post32' => 'Sujet : ',
+	'post35' => '[Ce message a &eacute;t&eacute; &eacute;dit&eacute; par son auteur pour la derni&egrave;re fois le ',
+	'post40' => 'Vérouiller le Sujet',
+	'post41' => 'Surverouiller',
+	'post42' => 'Dévérouiller',
+	'post43' => 'Simple Post',
+	'post44' => 'Post-it',
+	'post45' => 'Mettre en Annonce',
+	'post46' => 'Déplacer le Sujet',
+	'post47' => 'Supprimer le sujet',
+	'post48' => 'Voulez-vous vraiment supprimer\n definitivement ce sujet dans son entierté ?',
+	'post49' => 'Synchroniser',
+	'post50' => 'Supprimer le sondage',
+	'post51' => 'Voulez-vous vraiment supprimer definitivement\n le sondage de ce post ?',
+	'post55' => 'Réponse rapide',
+	'post56' => 'Prévisualiser',
+	'post57' => 'Envoyer'
+	);
+
+?>

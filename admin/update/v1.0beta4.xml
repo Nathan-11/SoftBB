@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<update>
+	<file>lol.php</file>
+	<mkdir>mon_dossier_pourri</mkdir>
+	<rmdir>install</rmdir>
+	<rmfile>info.php</rmfile>
+</update>

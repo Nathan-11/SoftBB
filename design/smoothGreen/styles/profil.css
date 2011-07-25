@@ -1,0 +1,19 @@
+
+/** cadres et labels */
+.fieldset_compte, .fieldset_profil, .fieldset_avatar	
+			{ border:3px double #DDD9D8; }
+.fieldset_compte		{ width:385px; float:left; }
+.fieldset_profil		{ width:385px; float:right; }
+.fieldset_avatar		{ width:385px; float:left; margin-top:20px; }
+	legend 			{ letter-spacing:8px;  }
+	.profil_precision	{ font-size }
+
+.profil_opt				{ background-color:#DDD9D8; padding:10px; width:95%; margin:auto; margin-bottom:5px;
+				border-radius:8px; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius: 10px; }
+.profil_label			{ width:155px; float:left; padding-left:10px; }
+
+/* Champs individuels */
+	.textarea_sign		{ width:350px; height:50px; }
+	.profil_avatarimg	{ float:right; padding:5px; }
+	.post_savebutton	{ clear:both; text-align:center; padding:20px; }
+		.post_savebutton input	{ padding:3px 30px 3px 30px; }

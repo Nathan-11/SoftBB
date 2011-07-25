@@ -1,0 +1,11 @@
+/*
+ */
+
+.top_infos{		/* SURDÉFINITION -> general.css */
+	padding-bottom:3px; }
+	.topinfo_form{		
+		float:left; }
+		.topinfo_form input{	/* champ recherche */	
+			margin-right:5px; }
+	.topinfo_page{		margin-top:3px; text-align:right; }
+

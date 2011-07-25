@@ -1,0 +1,15 @@
+
+/* global */
+label					{  }
+
+/* Champs spéciaux */
+.td_errors				{ padding:10px; }		/* zone de notification d'erreur */
+.tcond					{ width:100%; height:200px; }
+	.label_cond_ok		{ letter-spacing:3px; font-weight:bold; }
+
+
+/* Structure tableau */
+.reg_tdleft				{ padding:4px; padding-left:20px; }
+.reg_tdright			{ padding:4px; }
+.reg_tdrules			{ padding:10px; }
+
