@@ -259,7 +259,7 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 		Mais vous pouvez le déplacer et modifier le style /!\ -->
 	<p class="footer">
 		<a href="http://www.softbb.net">
-		<span class="footer">[ Copyright SoftBB v1.0 bêta2 ]</span></a> , 
+		<span class="footer">[ Copyright SoftBB v1.0 bêta3 ]</span></a> , 
 		<?php 
 			// auteur
 			echo '[ '.$langue_index['index20'].' SoftBB.net team  ] , '.

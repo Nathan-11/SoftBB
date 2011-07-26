@@ -32,13 +32,13 @@ if($haveUpdate && isset($_GET['maj']) && isset($_SESSION['maj'])) {
 	echo '<script type="text/javascript" src="admin/update.js"></script>';
 	echo '<script type="text/javascript">';
 	if(count($update_list) == 1) {
-		echo 'update_part(\''.$update_list[0].'\', function() {  });';//clean();
+		echo 'update_part(\''.$update_list[0].'\', function() { clean(); });';
 	} else {
 		$js = 'update_part(\''.$update_list[0].'\', function() {';
 		for($i = 1, $count = count($update_list)-1; $i <= $count; $i++) {
 			$js .= 'update_part(\''.$update_list[$i].'\', function() {';
 		}
-		//$js .= 'clean();';
+		$js .= 'clean();';
 		for($i = 1, $count = count($update_list)-1; $i <= $count; $i++) {
 			$js .= '});';
 		}
