@@ -3,7 +3,7 @@
 $host = 'localhost'; 
 $db = 'softbb'; 
 $user = 'root'; 
-$mdpbdd = '202263'; 
+$mdpbdd = ''; 
 $prefixtable = 'softbb_';
 
 ?>

@@ -231,8 +231,12 @@ try{
 // Récupération des données du membres
 if(isset($_COOKIE) && !empty($_COOKIE['idlog']) && !isset($_SESSION['idlog']) && empty($_SESSION['idlog']))
 {
-	$sql = 'SELECT id,mdp,temps,pseudo, valid FROM '.$prefixtable.'membres WHERE id = "'.intval($_COOKIE['idlog']).'" AND mdp="'.add_gpc($_COOKIE['mdp']).'" AND valid = "1"';
+	$sql = 'SELECT id,mdp,temps,pseudo, valid FROM '.$prefixtable.'membres WHERE id = "'.intval($_COOKIE['idlog']).'" AND mdp="'.add_gpc($_COOKIE['mdp']).'" AND valid = "1" LIMIT 0,1';
 	$req = $bdd->query($sql); 
+	$requse++;
+	
+	$sql = 'UPDATE ' . $prefixtable . 'membres SET date_login=\''.time().'\' WHERE id=\''.intval($_COOKIE['idlog']).'\'';
+	$req = $bdd->query($sql);
 	$requse++;
 
 	if($req->rowCount() == 1) {
