@@ -32,7 +32,7 @@ else
 		else
 		{
 			$pasmod = 1; 
-			$sql = 'SELECT www,avatar,sign,signaff,afflist,localisation,pseudo,mail,gmt,he,langue FROM '.$prefixtable.'membres WHERE id = "'.intval($_SESSION['idlog']).'"';
+			$sql = 'SELECT www,avatar,sign,signaff,afflist,localisation,pseudo,mail,gmt,he,langue,rang FROM '.$prefixtable.'membres WHERE id = "'.intval($_SESSION['idlog']).'"';
 		}
 	}
 	else

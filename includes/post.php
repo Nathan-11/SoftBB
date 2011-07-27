@@ -209,7 +209,7 @@ elseif($data3['groupe'] != -1 && $data3['groupe'] != 0 && $data3['groupe'] != -2
 		
 		else
 		{
-			// [6.4.1.4.1] On récupère le information relative au visionage pour le simple membre
+	// [6.4.1.4] Ici, il ne reste que les membres, non membres du groupe		// [6.4.1.4.1] On récupère le information relative au visionage pour le simple membre
 			$autorisation = 0;
 		}
 	}
@@ -559,13 +559,14 @@ if(!isset($vofpost)) $vofpost = 4;
 		{
 			$cmt++;
 			$color = 'alternate'.($color == 'alternate1') ? '1' : '2';
+			$rang = array('', ' class="modo"', ' class="admin"');
 			echo'
 			<div class="post_new">
 				<!-- Début zone fiche du membre -->
 				<a href="../">
 				<div class="post_fiche">
 					<a name="'.$data['id2'].'"></a>
-					<div class="p_pseudo">'.htmlentities($data['pseudo']).'</div>
+					<div class="p_pseudo"><span'. $rang[$data['rang']] . '>' . htmlentities($data['pseudo']).'</span></div>
 				';
 			if($data['rangspec'] > 0)
 			{

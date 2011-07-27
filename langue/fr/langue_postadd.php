@@ -38,11 +38,12 @@ $lg_posta = array(
 	'p31' => 'Sujet du message: ',
 	'p32' => 'Nouveau sujet post&eacute;',
 	'p33' => 'Vous avez envoy&eacute; un nouveau sujet. Vous allez être redirigé dans 5 secondes',
-	
+	'p34' => '',
 	'p35' => 'Si vous ne voulez pas attendre, cliquez sur ce lien : ',
 	'p36' => 'Retourner au forum.',
 	'p37' => 'Message modifi&eacute;',
 	'p38' => 'Message modifi&eacute;. Vous allez &ecirc;tre redirig&eacute; dans 5 secondes.',
+	'p39' => '',
 	'p41' => 'R&eacute;ponse envoy&eacute;e.',
 	'p42' => 'Vous avez envoy&eacute; une nouvelle reponse. Vous allez être redirigé dans 5 secondes.'
 );

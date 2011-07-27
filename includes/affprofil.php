@@ -102,7 +102,8 @@ if($aff == 1)
 			</td>
 			<td rowspan="'.$row.'" valign="top" class="cadre1_bas" style="padding:10px">
 				<span class="admin">'.$langue_affprofil['affprofil7'].' </span>';
-			echo htmlentities($data['pseudo']);
+			$rang_class = array('', ' class="modo"', ' class="admin"');
+			echo '<span ' . $rang_class[$data['rang']] . '>' . htmlentities($data['pseudo']) . '</span>';
 			echo'
 				<br /><span class="admin">'.$langue_affprofil['affprofil8'].' </span>
 				'; 
