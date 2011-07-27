@@ -8,7 +8,7 @@
 	 * CSS GLOBAL, supprimez en cas de forum intégré 
 	 */
 body 			{ font-family: Verdana, Arial, Helvetica, sans-serif;
-			background:url('../design/background.gif') repeat-x; background-color:#ECE8E5; margin:auto; 
+			background-color:#ECE8E5; margin:auto; 
 }
 label:hover		{ cursor:pointer; }
 a 				{ font-size:11px; text-decoration:none;  font-weight:bold; }

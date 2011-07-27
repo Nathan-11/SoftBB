@@ -42,9 +42,10 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title><?php echo $titre; ?></title>
-		<link href="<?php echo $design?>styles/general.css" rel="stylesheet" type="text/css" />
-		<link href="<?php echo $design?>styles/index.css" rel="stylesheet" type="text/css" />
-		<link href="<?php echo $design?>styles/bbcode.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $design; ?>styles/general.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $design; ?>styles/index.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $design; ?>styles/bbcode.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $design; ?>styles/main.css" rel="stylesheet" type="text/css" />
 		<?php
 		
 		// pas de variable page = indexforum
@@ -64,29 +65,47 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 		<script type="text/javascript" src="global_fct.js"></script>
 	</head>
 <body>
-	<!-- Header : Logo, menus -->
-	<a name="top"></a>
-	
-	<table cellspacing="0" cellpadding="0" class="maintable texte_base_normal">
-		<!-- Décoration supérieure -->
-		<tr>
-			<td class="maintable_topleft"></td>
-			<td class="maintable_topmiddle"></td>
-			<td class="maintable_topright"></td>
-		</tr>
-		<!-- Structure centrale -->
-		<tr>
-			<td class="maintable_middleleft"></td>
-			<td class="maintable_contenu">
-							
-				<!-- Logo, header... -->
-				<div class="f_cadre_header">
-					<div class="fch_logo">
-						<a href="<?php echo ((!$url_rewriting) ? 'index.php?page=indexforum' : 'indexforum.html' )?>" tabindex="5">
-							<img src="<?php echo $design?>menu/logo.png" alt="Logo" />
-						</a>
-					</div>
-					<?php
+		<!-- Tableau d'espacement d'entête-->
+	<div align="center"><center>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tbody>
+				<tr>
+					<td class="milieu_tp" width="100%">...</td>
+				</tr>
+			</tbody>
+		</table>
+	</center></div>
+	<!-- Fin du tableau d'espacement d'entête-->
+				
+	<!-- Tableau principale contenant l'entête de la page-->
+	<div align="center"><center>
+		<table class="tete" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tbody>
+				<tr>
+					<td width="10%">&nbsp;</td>
+					<td class="centre" width="80%"><a href="<?php echo ((!$url_rewriting) ? 'index.php?page=indexforum' : 'indexforum.html' )?>" tabindex="5">
+						<img src="<?php echo $design; ?>/img/titre.gif" width="346" height="30" border="0" alt="Logo"/></a><br /><span class="white">Tous pour softBB et softBB pour tous !</span></td>
+					<td width="10%">&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</center></div>
+	<!-- Fin du tableau principale contenant l'entête de la page-->
+				
+	<!-- Tableau pour la barre de menu-->
+	<div align="center"><center>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tbody>
+				<tr>
+					<td width="10%">&nbsp;</td>
+					<td class="men" width="50%"><a class="m" href="#">Profil</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /><a class="m" href="#">Membres</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /><a class="m" href="#">Groupes</a><img src="<?php echo $design; ?>img/px.gif" align="absmiddle" width="12" height="12" /><a class="m" href="#">Recherches</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /><a class="m" href="#">Faq</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /></td>
+					<td class="menn" width="30%"><a class="m" href="#">Connexion</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /><a class="m" href="#">Inscription</a><img src="<?php echo $design; ?>/img/px.gif" align="absmiddle" width="12" height="12" /></td>
+					<td width="10%">&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</center></div>
+					<?php /*
 						if(isset($mp) && $mp > 0){
 							echo '
 							<a href="'.((!$url_rewriting) ? 'index.php?page=mp' : 'mp.html').'">
@@ -106,56 +125,15 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 								echo $langue_index['index4'];
 						}		
 						else
-							echo $langue_index['index5'];
+							echo $langue_index['index5'];*/
 						?>
 					</div>
 				</div>
-				
-				<!-- Menu rapide -->
-				<ul id="header-top-menu">
-					<!--<li><a href="../"><span><span>Retour au site</span></span></a></li>-->
-				</ul>
-				
-				
-				<!-- Menu -->
-				<div class="cadre_menu">
-					<?php
-					if(empty($pseudo))
-					{
-						echo '
-						<a href="' . ((!$url_rewriting) ? 'index.php?page=connexion' : 'connexion.html').'" tabindex="10">
-							<img src="'.$design.'menu/'.$langue.'/connexion.gif" alt="'.$langue_index['index30'].'" /></a><a 
-							href="'.((!$url_rewriting) ? 'index.php?page=reg' : 'reg.html') .'" tabindex="20"><img 
-								src="'.$design.'menu/'.$langue.'/reg.gif" alt="'.$langue_index['index31'].'" /></a>';
-					}
-					else
-					{
-						echo '
-						<a href="' . ((!$url_rewriting) ? 'index.php?page=lgout' : 'lgout.html').'" tabindex="10"><img 
-							src="'.$design.'menu/'.$langue.'/deconnexion.gif" alt="'.$langue_index['index32'].'" /></a><a 
-								href="'.((!$url_rewriting) ? 'index.php?page=mp' : 'mp.html').'" tabindex="20"><img 
-							src="'.$design.'menu/'.$langue.'/messagerie.gif" alt="'.$langue_index['index32'].'" /></a>';
-					}
-					echo '<a href="'; 
-						if(!empty($pseudo))
-							echo ((!$url_rewriting) ? 'index.php?page=profil' : 'profil.html' );
-						else 
-							echo ((!$url_rewriting) ? 'index.php?page=connexion' : 'connexion.html' );
-						echo '" tabindex="30"><img 
-							src="'.$design.'menu/'.$langue.'/profil.gif" alt="'.$langue_index['index34'].'" /></a><a 
-						href="'.((!$url_rewriting) ? 'index.php?page=membre' : 'membre.html').'" tabindex="40"><img 
-							src="'.$design.'menu/'.$langue.'/membres.gif" alt="'.$langue_index['index35'].'" /></a><a 
-						href="'.((!$url_rewriting) ? 'index.php?page=groupe' : 'groupe.html').'" tabindex="50"><img 
-							src="'.$design.'menu/'.$langue.'/groupes.gif" alt="'.$langue_index['index36'].'" /></a><a 
-						href="'.((!$url_rewriting) ? 'index.php?page=search' : 'search.html').'" tabindex="60"><img 
-							src="'.$design.'menu/'.$langue.'/recherche.gif" alt="'.$langue_index['index37'].'" /></a><a 
-						href="'.((!$url_rewriting) ? 'index.php?page=faq' : 'faq.html').'" tabindex="70"><img 
-							src="'.$design.'menu/'.$langue.'/faq.gif" alt="'.$langue_index['index38'].'" /></a>
-				</div>'; 
-				?>
-				
-				<!-- Inclusion de page -->
-				<div class="f_cadre_contenu">
+				<div align="center"><center>
+					<table class="bloc_pref" cellspacing="0" cellpadding="0" border="0" width="80%">
+						<tbody>
+							<tr>
+								<td width="100%">
 					<?php
 						$page_autorise_lock = array('lgout', 'notifs', 'connexion', '');
 						
@@ -193,11 +171,17 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 							include_once('includes/'.htmlentities($page));
 						}
 					?>
-				</div>
+				</td>
+				</tr>
+				<tr>
 				
 				
-				<!-- Qui est en ligne ? + Footer -->
-				<div class="f_cadre_connectes">
+				<td class="fixia" width="100%">
+						<div align="center"><center>
+							<table cellspacing="1" cellpadding="0" border="0" width="100%">
+								<tbody>
+									<tr>
+										<td width="100%">
 					<table width="100%" class="texte_base_normal" cellspacing="0" cellpadding="0">
 						<tr class="titreforum">
 							<td class="texte_base_titrespec onlineTable_title" colspan="2">
@@ -235,31 +219,27 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 								</p>
 							</td>
 						</tr>
-						<tr>
-							<!-- Juste pour le style du tableau -->
-							<td class="onlineTable_bottom" colspan="2"></td>
-						</tr>
 					</table>
-				</div>
-			</div>
-			<!-- fin division cadre principal -->
-		</td>
-		<td class="maintable_middleright"></td>
-	</tr>
-	<!-- Décorations inférieures -->
-	<tr>
-		<td class="maintable_bottomleft"></td>
-		<td class="maintable_bottommiddle"></td>
-		<td class="maintable_bottomright"></td>
-	</tr>
-	</table>
-	
-	<!-- /!\ Rappel : dans les conditions d'utilisation GNU, 
-		il est interdit de modifier le copyright du forum.
-		Mais vous pouvez le déplacer et modifier le style /!\ -->
-	<p class="footer">
-		<a href="http://www.softbb.net">
-		<span class="footer">[ Copyright SoftBB v1.0 bêta3 ]</span></a> , 
+				</td>
+									</tr>
+								</tbody>
+							</table>
+						</center></div>
+					<!-- Fin du tableau des offres -->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</center></div>
+	<!-- Fin du tableau de présentation -->
+						
+	<!-- Tableau d'espacement d'entête-->
+	<div align="center"><center>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tbody>
+				<tr>
+					<td class="milieu_tp" width="100%"><a href="http://www.softbb.net">
+		[ Copyright SoftBB v1.0 bêta3 ]</a> , 
 		<?php 
 			// auteur
 			echo '[ '.$langue_index['index20'].' SoftBB.net team  ] , '.
@@ -275,10 +255,12 @@ require_once('langue/'. ( (file_exists('./langue/'.$langue.'/langue_index.php'))
 			
 			if($rang == 2) 
 				echo '<a href="admin/"><span class="footer"> , [ '.$langue_index['index16'].' ]</span></a>'; 
-		?>
-	</p>
-</body>
+		?></td>
+				</tr>
+			</tbody>
+		</table>
+	</center></div>
+	<!-- Fin du tableau d'espacement d'entête-->
+	
+	</body>
 </html>
-<?php
-ob_end_flush();
-?>
