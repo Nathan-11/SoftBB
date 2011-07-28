@@ -571,11 +571,11 @@ if(!isset($vofpost)) $vofpost = 4;
 			if($data['rangspec'] > 0)
 			{
 				$kk = $data['rangspec']-1;
-				if(!empty($rangimage[$kk])) 
-					echo '<img src="'.$rangimage[$kk].'" class="p_imgrang" alt="image du rang" />
-					';
-				echo '<span style="color: '.$rangcouleur[$kk].'" class="p_nomrang">'.$rangnom[$kk].'</span>
-					';
+
+				if(!empty($rangimage[$kk])) {
+					echo '<img src="'.$design.'rang/'.$rangimage[$kk].'" class="p_imgrang" alt="image du rang" /><br />';
+				}
+				echo '<span style="color: '.$rangcouleur[$kk].'" class="p_nomrang">'.$rangnom[$kk].'</span>';
 			}
 			else
 			{
