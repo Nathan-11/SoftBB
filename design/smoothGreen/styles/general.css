@@ -7,78 +7,76 @@
 	/**************************************************
 	 * CSS GLOBAL, supprimez en cas de forum intégré 
 	 */
-body 			{ font-family: Verdana, Arial, Helvetica, sans-serif;
-			background-color:#ECE8E5; margin:auto; 
-}
-label:hover		{ cursor:pointer; }
-a 				{ font-size:11px; text-decoration:none;  font-weight:bold; }
-	a img 		{ border:0; }
-	a:link 		{ color: #666666; font-weight: bold; text-decoration: none; }
-	a:visited 	{ color:#666666; }
-	a:hover 	{ color:#61B906; }
+body 					{ font-family: Verdana, Arial, Helvetica, sans-serif; background: url('../design/background.gif') repeat-x; background-color: #ECE8E5; margin: auto; }
+
+label:hover				{ cursor: pointer; }
+a 						{ font-size: 11px; text-decoration: none;  font-weight: bold; }
+a img 					{ border: 0px; }
+a:link 					{ color: #666666; font-weight: bold; text-decoration: none; }
+a:visited 				{ color: #666666; }
+a:hover 					{ color: #61B906; }
 
 	/******************** 
 	 * FORME DU TEXTE 
 	 */
-.texte_base_normal 	{ font-size:12px; color:#81807E; }							/* majoritaire */
-.texte_base_fin 	{ font-size:11px; font-weight:normal; color:#807F7D; }		/* précisions */
-.texte_base_titre, .texte_base_titrespec { font-size:10px; font-weight:bold; color:#81807E; }
-	.texte_base_titre   { letter-spacing:2px; }
-	.texte_base_titrespec{font-size:11px; letter-spacing:4px; }
-input, textarea			{font-family: Verdana, Arial, Helvetica, sans-serif; color:#444444; font-size:12px;  }
+.texte_base_normal 		{ font-size: 12px; color: #81807E; }							/* majoritaire */
+.texte_base_fin 			{ font-size: 11px; font-weight: normal; color: #807F7D; }		/* précisions */
+.texte_base_titre, .texte_base_titrespec { font-size: 10px; font-weight: bold; color: #81807E; }
+.texte_base_titre   		{ letter-spacing: 2px; }
+.texte_base_titrespec	{ font-size: 11px; letter-spacing: 4px; }
+input, textarea				{ font-family: Verdana, Arial, Helvetica, sans-serif; color: #444444; font-size: 12px;  }
 
 	/****************************
 	 * CSS CELLULES ET CADRES
 	 */
-/* Espace réservé aux information avant le contenu de la page (heure, lien vers index, nouveau sujet...) */
-.top_infos				{ padding:10px; font-size:10px; }
-.bottom_infos			{ padding:10px; font-size:10px; }
+	/* Espace réservé aux information avant le contenu de la page (heure, lien vers index, nouveau sujet...) */
+.top_infos				{ padding: 10px; font-size: 10px; }
+.bottom_infos			{ padding: 10px; font-size: 10px; }
 
-/* Les td.titre forum corresponde au cadre où sont affichés les catégories :
- * titreforum : à gauche et titreforumend le plus à droite */
-.contour_cadre				{ border:1px solid #DDDDDD; }
-	.titreforum 			{ background-image:url('../design/fondnomforum.gif'); height:25px; }
+	/* Les td.titre forum corresponde au cadre où sont affichés les catégories :
+	* titreforum : à gauche et titreforumend le plus à droite */
+.contour_cadre			{ border: 1px solid #DDDDDD; }
+.titreforum 				{ background-image: url('../design/fondnomforum.gif'); height:25px; }
 .onlineTable_title, 
-	.titreforumstart 		{ background-image:url('../design/fondforumstart.gif'); background-repeat:no-repeat; margin-left:60px; text-align:left; }
-	.titreforumend 			{  }
-	.titreforumunique 		{ background-image:url('../design/fondnomforum.gif'); text-align:center; height:20px; }
-td.titreforum, td.titreforumend{ text-align:center; padding:0px 10px 0px 10px; }
-td.titreforumstart{ text-align:left; padding:0px 10px 0px 43px; }
+.titreforumstart 		{ background-image: url('../design/fondforumstart.gif'); background-repeat:no-repeat; margin-left:60px; text-align:left; }
+.titreforumend 			{ /* à surdéfinir */ }
+.titreforumunique 		{ background-image: url('../design/fondnomforum.gif'); text-align:center; height:20px; }
+td.titreforum, td.titreforumend{ text-align: center; padding: 0px 10px 0px 10px; }
+td.titreforumstart		{ text-align: left; padding: 0px 10px 0px 43px; }
 
 
-/* Les td.cadre_? sont les cellules dans le forum où sont affichées le nombre de messages, réponses,
- * titre du forum, ... foncé signifie que ce sont les cadres foncés et clair que ce sont les clairs
- * Ajoutez des classes diverses, elles suivront le style des cadres (surdéfinition de la valeur par défaut) */
+	/* Les td.cadre_? sont les cellules dans le forum où sont affichées le nombre de messages, réponses,
+	* titre du forum, ... foncé signifie que ce sont les cadres foncés et clair que ce sont les clairs
+	* Ajoutez des classes diverses, elles suivront le style des cadres (surdéfinition de la valeur par défaut) */
 .cell1_if_logo, .cell2_if_titre, .cell5_if_pseudo, .onlineTable_contain, 
-	td.cadre_clair 			{ background-color:#DDD9D8; border-right:1px solid #CCCCCC; border-bottom:1px solid #ECE8E5; }
+td.cadre_clair 			{ background-color: #DDD9D8; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #ECE8E5; }
 .cell3_if_nbsujet, .cell4_if_nbmsg,
-	td.cadre_fonce 			{ background-color:#CCCBC9; border-right:1px solid #CCCCCC; border-bottom:1px solid #ECE8E5; }
-	td.cadre_fonce_end 		{ background-color:#CCCBC9; border-bottom:1px solid #ECE8E5; }
+td.cadre_fonce 			{ background-color: #CCCBC9; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #ECE8E5; }
+td.cadre_fonce_end 		{ background-color: #CCCBC9; border-bottom: 1px solid #ECE8E5; }
 
-/* Les td.alternate sont les styles alternés utilisés lors de l'affichage d'un post, 
-** il est utile de mettre une couleur différentes pour mieu séparer les différents messages. */
-td.alternate1 			{ background-color:#FFFFFF; border-bottom:1px solid #CCCCCC; font-size:13px; color:#444444; font-weight: normal; }
-td.alternate2 			{ background-color:#FEFEFE; border-bottom:1px solid #CCCCCC; font-size:13px; color:#444444; font-weight:normal; }
+	/* Les td.alternate sont les styles alternés utilisés lors de l'affichage d'un post, 
+	** il est utile de mettre une couleur différentes pour mieu séparer les différents messages. */
+td.alternate1 			{ background-color: #FFFFFF; border-bottom: 1px solid #CCCCCC; font-size: 13px; color: #444444; font-weight: normal; }
+td.alternate2 			{ background-color: #FEFEFE; border-bottom: 1px solid #CCCCCC; font-size: 13px; color: #444444; font-weight: normal; }
 
 
 
 	/**************
 	 * STATUTS 
 	 */
-.admin 		{ color: #61B906; }
-.modo 		{ color: #999999; }
-.red 		{ color: #FF0000; }		/* = bannis */
+.admin 					{ color: #61B906; }
+.modo 					{ color: #999999; }
+.red 					{ color: #FF0000; }		/* = bannis */
 
-/* edit est la classe du texte qui affiche l'indication de modification d'un post par son créateur */
-.edit 		{ font-size:9px; color:#999999; font-weight:normal; }
+	/* edit est la classe du texte qui affiche l'indication de modification d'un post par son créateur */
+.edit 					{ font-size: 9px; color: #999999; font-weight: normal; }
 
 
 	/**************
 	 * NOTIFICATION (messages d'erreur principalement : titre, message) 
 	 */
-.notif_cadre 	{ width:80%; border:1px solid #CCCCCC; border-top:0px; margin:auto; margin-top:15px; margin-bottom:40px; }
-	.notif_titre	{ background-image:url('../design/fondnomforum.gif'); width:100%; text-align:center; 
-				height: 20px; padding-top:5px; }
-	.notif_msg		{ background-color:#FEFEFE; padding:10px; text-align:center; }
+.notif_cadre 	{ width: 80%; border: 1px solid #CCCCCC; border-top: 0px; margin: auto; margin-top: 15px; margin-bottom: 40px; }
+.notif_titre	{ background-image:	url('../design/fondnomforum.gif'); width: 100%; text-align:center; height: 20px; padding-top: 5px; }
+.notif_msg		{ background-color:	#FEFEFE; padding: 10px; text-align:	center; }
 
 

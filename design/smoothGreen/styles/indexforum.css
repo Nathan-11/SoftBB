@@ -2,35 +2,31 @@
  * Feuille de style de la page /includes/indexforum.php = listing des forums
  */
 
-/* espace supérieur */
-.if_top_g{
-	float:left; }
-.if_top_d{
-	text-align:right; }
+	/* espace supérieur */
+.if_top_g					{ float: left; }
+.if_top_d					{ text-align: right; }
 
-table.maintable_forums	{  }
-
-.space_forums			{ height:20px; }		/* espace entre les tableaux */
-/* cellule de titre à gauche */
-.titreforum				{ margin-top:20px; }
-/* cellule de titre à droite */
-.titreforumend			{ /* à surdéfinir */ }
+table.maintable_forums		{ /* à surdéfinir */ }
+	/* espace entre les tableaux */
+.space_forums				{ height: 20px; }
+	/* cellule de titre à gauche */
+.titreforum					{ margin-top: 20px; }
+	/* cellule de titre à droite */
+.titreforumend				{ /* à surdéfinir */ }
 	/* cellules d'affichage */
-	.cadre_clair		{ /* à surdéfinir */ }
-	.cadre_fonce		{ /* à surdéfinir */ }
-	.if_cadre_fonce_end	{ /* à surdéfinir */ }
+.cadre_clair				{ /* à surdéfinir */ }
+.cadre_fonce				{ /* à surdéfinir */ }
+.if_cadre_fonce_end			{ /* à surdéfinir */ }
 	
 	/* Cellules une à une, pour surdéfinir les valeurs par défaut (cadre_clair, cadre_fonce) dans general.css :
 	 * grouper les attributs (ex: cadre_clair, cell1_logo { ... } ) */
-	.cell1_if_logo		{ width:1px; } 
-	.cell2_if_titre		{ padding:5px; }
-	.cell3_if_nbsujet	{ text-align:center; width:75px; }
-	.cell4_if_nbmsg		{ text-align:center; width:52px; }
-	.cell5_if_pseudo	{ text-align:center; }
+.cell1_if_logo				{ width: 1px; } 
+.cell2_if_titre				{ padding: 5px; }
+.cell3_if_nbsujet			{ text-align: center; width: 75px; }
+.cell4_if_nbmsg				{ text-align: center; width: 52px; }
+.cell5_if_pseudo			{ text-align: center; }
 
-/* Zone de légende des icones */
-.table_legende_icones{
-	margin:auto; margin-top:10px; margin-bottom:10px; }
-	.table_legende_icones td{
-		vertical-align:middle; }
+	/* Zone de légende des icones */
+.table_legende_icones		{ margin: auto; margin-top: 10px; margin-bottom: 10px; }
+.table_legende_icones td		{ vertical-align: middle; }
 	

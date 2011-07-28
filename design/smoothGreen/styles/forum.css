@@ -3,47 +3,41 @@
  * d'un forum.
  */
 
-/* espace supérieur */
-.f_top_g{
-	padding:5px; float:left; }
-.f_top_m{
-	padding:10px; float:left; }
-.f_top_d{ float:right;
-	padding:10px; text-align:right; }
+	/* espace supérieur */
+.f_top_g				{ padding: 5px; float: left; }
+.f_top_m				{ padding: 10px; float: left; }
+.f_top_d				{ float: right; padding: 10px; text-align: right; }
 
-/* cellule de titre à gauche */
-.titreforum{ /* à surdéfinir */ }
+	/* cellule de titre à gauche */
+.titreforum				{ /* à surdéfinir */ }
 
-/* cellule de titre à droite */
-.titreforumend{ /* à surdéfinir */ }
+	/* cellule de titre à droite */
+.titreforumend			{ /* à surdéfinir */ }
 
 	/* cellules d'affichage */
-	.cadre_clair{ /* à surdéfinir */ }
-	.cadre_fonce{ /* à surdéfinir */ }
-	.if_cadre_fonce_end{ /* à surdéfinir */ }
-	.espace{ background-color:#EEEEEE; border-bottom:1px solid #CCCCCC; height:5px; }
+.cadre_clair			{ /* à surdéfinir */ }
+.cadre_fonce			{ /* à surdéfinir */ }
+.if_cadre_fonce_end		{ /* à surdéfinir */ }
+.espace					{ background-color: #EEEEEE; border-bottom: 1px solid #CCCCCC; height: 5px; }
 
-/* Tout ce qui correspond à "allera" est utilisé lorsqu'il y a plus d'une page dans un post pour 
- * permettre d'aller direcement sur la dernière page lorsqu'on arrive dans le forum
- *		Exemple : [ Aller à la page 1,2,3,4 ]
- * Les classes qui suivent définissent les couleurs et tailles */
-.allera 					{ font-size:10px; color:#666666; font-weight:normal; }
-	.allera a	 			{ font-size:10px; color:#666666; }
-	.allera a:link 			{ color:#666666; }
-	.allera a:visited 		{ color:#666666; }
-	.allera a:hover 		{ color:#61B906; }
-
-
-/* messagevisite correspond à la mise en forme des sujets déjà visités dans un forum */
-.messagevisite a:visited { font-size:11px; color:#999999; }
-.messagevisite a:hover 	{ font-size:11px; color:#61B906; }
+	/* Tout ce qui correspond à "allera" est utilisé lorsqu'il y a plus d'une page dans un post pour 
+	* permettre d'aller direcement sur la dernière page lorsqu'on arrive dans le forum
+	*		Exemple : [ Aller à la page 1,2,3,4 ]
+	* Les classes qui suivent définissent les couleurs et tailles */
+.allera 					{ font-size: 10px; color: #666666; font-weight: normal; }
+.allera a	 			{ font-size: 10px; color: #666666; }
+.allera a:link 			{ color: #666666; }
+.allera a:visited 		{ color: #666666; }
+.allera a:hover 			{ color: #61B906; }
 
 
-/* Zone de légende des icones */
-.table_legende_icones{
-	margin:auto; margin-top:0px; margin-bottom:15px; }
-	.table_legende_icones td{
-		vertical-align:middle; }
-	.bottom_infos{	/* SURDEFinition */
-		padding-bottom:0px; }
+	/* messagevisite correspond à la mise en forme des sujets déjà visités dans un forum */
+.messagevisite a:visited { font-size: 11px; color: #999999; }
+.messagevisite a:hover 	{ font-size: 11px; color: #61B906; }
+
+
+	/* Zone de légende des icones */
+.table_legende_icones	{ margin: auto; margin-top: 0px; margin-bottom: 15px; }
+.table_legende_icones td	{ vertical-align: middle; }
+.bottom_infos			{ /* SURDEFinition */ padding-bottom: 0px; }
 

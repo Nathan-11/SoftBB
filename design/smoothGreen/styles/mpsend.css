@@ -1,20 +1,20 @@
 
-/* Composants */
-.text_prev				{ margin-left:120px; width:500px; padding:10px; }
+	/* Composants */
+.text_prev					{ margin-left: 120px; width: 500px; padding: 10px; }
 
-.post_textarea			{ width:99%; height:200px; margin:5px;}
-.post_input_title		{ width:480px; }
+.post_textarea				{ width: 99%; height: 200px; margin: 5px;}
+.post_input_title			{ width: 480px; }
 
-/* Cellules individuelles du tableau */
+	/* Cellules individuelles du tableau */
 .table_mpsend				{ }
-	.table_mpsend_top			{  }
-	.cell_mpsend_author			{ width:160px; padding:4px; }
-	.cell_mpsend_authordisplay	{ padding:4px; }
-	.cell_mpsend_error			{ padding:4px; }
-	.cell_mpsend_errordisplay	{ padding:4px; }
-	.cell_mpsend_subject		{ padding:4px; }
-	.cell_mpsend_subjectdisplay	{ padding:4px; }
-	.cell_mpsend_contain		{ vertical-align:top; padding:4px; }
-	.cell_mpsend_containdisplay	{ padding:4px; }
+.table_mpsend_top			{  }
+.cell_mpsend_author			{ width: 160px; padding: 4px; }
+.cell_mpsend_authordisplay	{ padding: 4px; }
+.cell_mpsend_error			{ padding: 4px; }
+.cell_mpsend_errordisplay	{ padding: 4px; }
+.cell_mpsend_subject		{ padding: 4px; }
+.cell_mpsend_subjectdisplay	{ padding: 4px; }
+.cell_mpsend_contain		{ vertical-align: top; padding: 4px; }
+.cell_mpsend_containdisplay	{ padding: 4px; }
 
-	.mpsend_send_buttons		{ padding:4px; text-align:center; }
+.mpsend_send_buttons		{ padding: 4px; text-align: center; }

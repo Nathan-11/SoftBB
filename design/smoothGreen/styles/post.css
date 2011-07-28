@@ -1,45 +1,39 @@
 
+	/* sous partie contenant les boutons de réponses, parties du haut et du bas sencées symétriques */
+.top_boutons, .bottom_boutons	{ float: left; }
+.top_titre, .bottom_admin		{ padding-top: 5px; float: left; padding-left: 20px; }
+.top_pagination, .bottom_pagination	{ float: right; padding-top: 5px; }
 
-/* sous partie contenant les boutons de réponses, parties du haut et du bas sencées symétriques */
-.top_boutons, .bottom_boutons		{ float:left; }
-.top_titre, .bottom_admin			{ padding-top:5px; float:left; padding-left:20px; }
-.top_pagination, .bottom_pagination	{ float:right; padding-top:5px; }
 
-
-/* Partie sondage (supérieure) */
-.post_sondage	{ width:80%; margin:auto; margin-bottom:15px; }
-.post_sond_in 	{ margin:auto; margin-top:10px; margin-bottom:10px; }
-	.sond_table	{ margin:auto; }
+	/* Partie sondage (supérieure) */
+.post_sondage					{ width: 80%; margin: auto; margin-bottom: 15px; }
+.post_sond_in 					{ margin: auto; margin-top: 10px; margin-bottom: 10px; }
+.sond_table						{ margin: auto; }
 
 /* Lecture du sujet */
-.post_global				{ width:100%; border:none; }
-	.post_new				{ margin-top:0px; margin-bottom:8px; }
-		.post_fiche			{ float:left; background-color:#CCCBC9; text-align:center; width:150px; 
-								border-right:1px solid #DDDDDD; padding:4px; 
-								border-radius:8px; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius: 10px; }
-			.p_pseudo		{ font-weight:bold; }
-			.p_imgrang		{  }
-			.p_nomrang		{ font-size:8px; }
-			.p_avatar		{ margin-top:5px; }
-			.p_msg			{ margin:3px; }
-		.post_msg			{ margin-left:170px; padding:7px 7px 15px 7px; background-color:#DDD9D8; min-height:140px;
-								border-radius:8px; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius: 10px; }
-			.posthead_buttons{ float:right; width:200px; text-align:right; }
-			.posthead_infos { padding:5px 0px 6px 8px; border-bottom:1px solid #CCCCCC; font-size:10px;  }
-		.post_msgtxt		{ margin-top:5px; color:#5C5C5C; }
-		.post_fiche, .post_msgtxt { padding-bottom:9px; }
-		.post_undermsg		{ clear:both; height:10px; }
+.post_global					{ width: 100%; border: none; }
+.post_new						{ margin-top: 0px; margin-bottom: 8px; }
+.post_fiche						{ float: left; background-color: #CCCBC9; text-align: center; width: 150px; border-right: 1px solid #DDDDDD; padding: 4px; border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 10px; }
+.p_pseudo						{ font-weight: bold; }
+.p_imgrang						{ /* à surdéfinir */ }
+.p_nomrang						{ font-size: 8px; }
+.p_avatar						{ margin-top: 5px; }
+.p_msg							{ margin: 3px; }
+.post_msg						{ margin-left: 170px; padding: 7px 7px 15px 7px; background-color: #DDD9D8; min-height: 140px; border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 10px; }
+.posthead_buttons				{ float: right; width: 200px; text-align: right; }
+.posthead_infos 					{ padding: 5px 0px 6px 8px; border-bottom: 1px solid #CCCCCC; font-size: 10px;  }
+.post_msgtxt					{ margin-top: 5px; color: #5C5C5C; }
+.post_fiche, .post_msgtxt 		{ padding-bottom: 9px; }
+.post_undermsg					{ clear: both; height: 10px; }
 
-
-/* zone de réponse rapide */
-.post_quickrep					{ width:80%; margin:auto; margin-bottom:15px; }
-	.zone_reponse_rapide		{ text-align:center; background-color:#DDDDDD; }
-	.titre_reponse_rapide		{ background-image:url('../design/fondnomforum.gif'); width:100%; text-align:center; 
-				height: 20px; padding-top:5px; }
-		/* formulaire */
-		.zone_reponse_rapide form{ margin:10px 0px 10px 0px;}
-		.reponse_rapide_titre	{ width:80%; margin-bottom:4px; visibility:hidden; height:0px; }
-		.reponse_rapide_textarea{ width:80%; margin:auto; height:80px; margin-bottom:4px; font-size:10px; }
+	/* zone de réponse rapide */
+.post_quickrep					{ width: 80%; margin: auto; margin-bottom: 15px; }
+.zone_reponse_rapide			{ text-align: center; background-color: #DDDDDD; }
+.titre_reponse_rapide			{ background-image: url('../design/fondnomforum.gif'); width: 100%; text-align: center; height: 20px; padding-top: 5px; }
+	/* formulaire */
+.zone_reponse_rapide form			{ margin: 10px 0px 10px 0px;}
+.reponse_rapide_titre			{ width: 80%; margin-bottom: 4px; visibility: hidden; height: 0px; }
+.reponse_rapide_textarea		{ width: 80%; margin: auto; height: 80px; margin-bottom: 4px; font-size: 10px; }
 
 
 

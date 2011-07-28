@@ -1,17 +1,15 @@
 
 
-/* Éléments de la partie supérieurs (boutons et arborescance) */
-.mptop_left{
-	float:left; padding-right:10px; }
-.mptop_arbo{
-	margin-top:5px; }
+	/* Éléments de la partie supérieurs (boutons et arborescance) */
+.mptop_left					{ float: left; padding-right: 10px; }
+.mptop_arbo					{ margin-top: 5px; }
 
 
-/* Cellules individuelles */
-.mp_nomsg			{ text-align:center; font-weight:bold; height:30px; }
-.cell1_mp_logo		{ width:1px; }
-.cell2_mp_title		{ width:200px;padding:5px; text-align:left; }
-.cell3_mp_author	{ text-align:center; width:130px; }
-.cell4_mp_date		{ width:135px; text-align:center; }
-.cell5_mp_nb		{ width:35px; text-align:center; }
-.cell6_mp_del		{ width:135px; text-align:center; cursor:pointer; }
+	/* Cellules individuelles */
+.mp_nomsg					{ text-align: center; font-weight: bold; height: 30px; }
+.cell1_mp_logo				{ width: 1px; }
+.cell2_mp_title				{ width: 200px;padding: 5px; text-align: left; }
+.cell3_mp_author			{ text-align: center; width: 130px; }
+.cell4_mp_date				{ width: 135px; text-align: center; }
+.cell5_mp_nb				{ width: 35px; text-align: center; }
+.cell6_mp_del				{ width: 135px; text-align: center; cursor: pointer; }

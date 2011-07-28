@@ -5,47 +5,46 @@
  * la page index.php pour ajouter les composants de votre site.
  */
 
-/* Tableau de structure (en cas de décorations) 3x3 */
-.maintable			{ margin:auto; margin-top:15px; width:829px; }
-	.maintable_topleft		{ width:0px; height:0px;}
-	.maintable_topmiddle	{ }
-	.maintable_topright		{ width:0px; }
+	/* Tableau de structure (en cas de décorations) 3x3 */
+.maintable					{ margin: auto; margin-top: 15px; width: 829px; }
+.maintable_topleft			{ width: 0px; height: 0px;}
+.maintable_topmiddle		{ /* à surdéfinir */ }
+.maintable_topright			{ width: 0px; }
 	
-	.maintable_middleleft	{ }
-	.maintable_contenu		{ }
-	.maintable_middleright	{ }
+.maintable_middleleft		{ /* à surdéfinir */ }
+.maintable_contenu			{ /* à surdéfinir */ }
+.maintable_middleright		{ /* à surdéfinir */ }
 	
-	.maintable_bottomleft	{ height:0px; }
-	.maintable_bottommiddle	{ }
-	.maintable_bottomright	{ }
+.maintable_bottomleft		{ height: 0px; }
+.maintable_bottommiddle		{ /* à surdéfinir */ }
+.maintable_bottomright		{ /* à surdéfinir */ }
 	
-
+	/* contient header */
+.f_cadre_header				{ font-size: 10px; height: 116px; }
 	/* logo */
-	.fch_logo		{ float:left; margin-top:7px;  }
+.fch_logo					{ float: left; margin-top: 7px;  }
 	/* autres infos */
-	.fch_info		{ padding-top:90px; font-size:10px; font-weight:bold; color:#EDF009; }
-	.mp_logo		{ margin-top:40px; margin-right:30px; float:right; }
+.fch_info					{ padding-top: 90px; font-size: 10px; font-weight: bold; color: #EDF009; }
+.mp_logo					{ margin-top: 40px; margin-right: 30px; float: right; }
 
-/* Menu Rapide */
-#header-top-menu li 	{ float: right; margin-right: 2px; list-style-type:none; }
-#header-top-menu li a	{ background: url(../menu/layout/menu/tab-bg-left.png) no-repeat top left #7f9f04; display: block; color: #dee707; }
-#header-top-menu li a span { background: url(../menu/tab-bg-right.png) no-repeat top right; display: block; padding:2px; }
-#header-top-menu li a span span { background: url(../menu/tab-bg-corner.png) no-repeat top right; display: block; padding:0 5px; }
+	/* Menu Rapide */
+#header-top-menu li 			{ float: right; margin-right: 2px; list-style-type: none; }
+#header-top-menu li a			{ background: url(../menu/layout/menu/tab-bg-left.png) no-repeat top left #7f9f04; display: block; color: #DEE707; }
+#header-top-menu li a span 		{ background: url(../menu/tab-bg-right.png) no-repeat top right; display: block; padding: 2px; }
+#header-top-menu li a span span	{ background: url(../menu/tab-bg-corner.png) no-repeat top right; display: block; padding: 0 5px; }
 							
 
-/* contient les boutons du menu */
-.cadre_menu			{ clear:both; margin-top:37px; background-image:URL('../menu/menufond.gif'); background-repeat:no-repeat; 
-						width:829px; height:57px; padding-top:2px; text-align:center; }
+	/* contient les boutons du menu */
+.cadre_menu					{ clear: both; margin-top: 37px; background-image: URL('../menu/menufond.gif'); background-repeat: no-repeat; width: 829px; height: 57px; padding-top: 2px; text-align: center; }
 	
-/* partie où sont inclus les pages */
-.f_cadre_contenu	{ }
+	/* partie où sont inclus les pages */
+.f_cadre_contenu			{ /* à surdéfinir */ }
 
-/* Qui est en ligne ? */
-.f_cadre_connectes 		{ margin-top:20px; }
-	.onlineTable_title	{ margin-left:30px; padding-left:43px; }
-	.onlineTable_bottom { height:37px; background-image:URL('../footer/bottom_table.gif'); background-repeat:no-repeat; }
+	/* Qui est en ligne ? */
+.f_cadre_connectes 			{ margin-top: 20px; }
+.onlineTable_title		{ margin-left: 30px; padding-left: 43px; }
+.onlineTable_bottom 		{ height: 37px; background-image: URL('../footer/bottom_table.gif'); background-repeat: no-repeat; }
 
 
-/* footer correspond au texte du fond contenant entre autre le copyright */
-.footer 			{ background-color:#C0B9B3; font-size: 9px; color: #FFFFFF; font-weight: normal; 
-						text-align:center; padding:5px; margin-top:20px; }
+	/* footer correspond au texte du fond contenant entre autre le copyright */
+.footer 						{ background-color: #C0B9B3; font-size: 9px; color: #FFFFFF; font-weight: normal; text-align: center; padding: 5px; margin-top: 20px; }
